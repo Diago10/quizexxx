@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const API_URL = '/api/Uw5CrX';
+const API_URL = '/db.json'; // Path to your local JSON file
 
 export const fetchQuizData = async () => {
   try {
-    const response = await axios.get(API_URL); // Ensure this matches your proxy
-    return response.data.questions; // Extract only the questions array
+    const response = await axios.get(API_URL);
+    return response.data.questions; // Ensure this matches the JSON structure
   } catch (error) {
     console.error('Error fetching quiz data:', error.message);
     throw new Error('Failed to fetch quiz data');
