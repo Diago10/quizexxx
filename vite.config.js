@@ -6,8 +6,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [tailwindcss(), react()],
   server: {
-    build: {
-      outDir: "build",
+    proxy: {
+      '/api': {
+        target: 'https://api.jsonserve.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
     },
   },
 });
