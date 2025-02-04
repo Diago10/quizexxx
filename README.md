@@ -46,7 +46,7 @@ npm run dev
 yarn dev
 ```
 
-The application will be available at [http://localhost:5173](http://localhost:5173).
+The application will be available at [netlify]([http://localhost:5173](https://67a25c5e1d806b0008846b65--quizexxx.netlify.app/)).
 
 ### Tailwind CSS v4 Configuration
 
