@@ -46,7 +46,7 @@ npm run dev
 yarn dev
 ```
 
-The application will be available at:  [Netlify](https://67a3a52f02b167009f5be4b1--quizexxx.netlify.app/).
+The application will be available at [Netlify](https://67a3ad05ece9da0a2846185a--quizexxx.netlify.app/).
 
 ### Tailwind CSS v4 Configuration
 
