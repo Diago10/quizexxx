@@ -160,7 +160,14 @@ const Quiz = () => {
         </motion.div>
       )}
 
-      <div className="w-full max-w-lg mb-6">
+      <div
+        className="font-mono absolute top-2 right-2 text-lg font-bold bg-blue-100 px-4 py-2 rounded-full"
+        aria-live="polite"
+      >
+        Live Score: {score}
+      </div>
+
+      <div className="w-full max-w-lg mb-6 mt-10">
         <motion.div
           className={`h-4 ${timerStyle} rounded-full`}
           style={{ width: `${(timeRemaining / 20) * 100}%` }}
@@ -169,22 +176,15 @@ const Quiz = () => {
         />
       </div>
 
-      <div
-        className="font-mono absolute top-8 right-8 text-lg font-bold bg-blue-100 px-4 py-2 rounded-full"
-        aria-live="polite"
-      >
-        Live Score: {score}
-      </div>
-
-      <div className="font-mono max-w-2xl w-full bg-white rounded-xl shadow-lg p-6">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4" aria-live="polite">
+      <div className="font-mono max-w-2xl w-full bg-white rounded-xl shadow-xl p-6">
+        <h2 className="text-sm md:text-xl lg:text-2xl font-bold mb-4" aria-live="polite">
           {currentQuestion.description}
         </h2>
         <div className="space-y-4">
           {currentQuestion.options.map((option, index) => (
             <button
               key={index}
-              className={`w-full py-2 px-6 md:py-2 md:px-4 text-left rounded-lg bg-blue-100 hover:bg-blue-200 transition 
+              className={`w-full py-2 px-6 text-xs md:text-lg lg:text-xl text-left rounded-lg bg-blue-100 hover:bg-blue-200 transition 
                 ${
                   feedback &&
                   (option.is_correct

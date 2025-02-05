@@ -45,10 +45,10 @@ const Landing = ({ onTransitionEnd }) => {
             exit={{ y: -50, opacity: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="font-mono text-white text-4xl md:text-6xl lg:text-6xl font-bold">
+            <h1 className="font-mono font-extrabold justify-center text-white text-2xl md:text-6xl lg:text-6xl">
               Welcome to Quizexxx
             </h1>
-            <p className="font-mono text-white mt-4 font-bold">
+            <p className="font-mono justify-center text-white mt-4 font-bold">
               We are glad to have you here!
             </p>
           </motion.div>
