@@ -8,7 +8,7 @@ This is a  web-based quiz application with gamification features built with Reac
 - **Vite**: A fast build tool and development server.
 - **Tailwind CSS v4**: A utility-first CSS framework for rapidly building custom designs.
 
-## Prerequisites
+## PrerequisitesA
 
 Before you begin, ensure you have the following installed:
 
@@ -46,7 +46,7 @@ npm run dev
 yarn dev
 ```
 
-The application will be available at [http://localhost:5173](http://localhost:5173).
+The application will be available at ([Netlify](https://67a25c5e1d806b0008846b65--quizexxx.netlify.app/)).
 
 ### Tailwind CSS v4 Configuration
 
